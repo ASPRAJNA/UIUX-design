@@ -1,31 +1,14 @@
-function fun1(){
-    document.getElementById('list1').style.color="rgb(141, 66, 173)";
-    document.getElementById('list2').style.color="gray";
-    document.getElementById('list3').style.color="gray";
-    document.getElementById('list4').style.color="gray";
-    document.getElementById('imgtab').src="img1.png";
-}
+const panels = document.querySelectorAll('.panel')
 
-function fun2(){
-    document.getElementById('list2').style.color="rgb(141, 66, 173)";
-    document.getElementById('list3').style.color="gray";
-    document.getElementById('list4').style.color="gray";
-    document.getElementById('list1').style.color="gray";
-    document.getElementById('imgtab').src="img2.png";
-}
+panels.forEach(panel=>{
+    panel.addEventListener('click', () => {
+        removeActiveclass()
+        panel.classList.add('active')
+    })
+})
 
-function fun3(){
-    document.getElementById('list3').style.color="rgb(141, 66, 173)";
-    document.getElementById('list2').style.color="gray";
-    document.getElementById('list1').style.color="gray";
-    document.getElementById('list4').style.color="gray";
-    document.getElementById('imgtab').src="img3.png";
-}
-
-function fun4(){
-    document.getElementById('list4').style.color="rgb(141, 66, 173)";
-    document.getElementById('list2').style.color="gray";
-    document.getElementById('list3').style.color="gray";
-    document.getElementById('list1').style.color="gray";
-    document.getElementById('imgtab').src="img4.png";
+function removeActiveclass() {
+    panels.forEach(panel => {
+        panel.classList.remove('active')
+    })
 }
