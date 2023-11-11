@@ -2,7 +2,7 @@
 Contains HTML CSS AND JAVA SCRIPT DESIGNS
 
 
-### ranches:
+### Branches:
   *  design1 : Mobile view
   *  design2 : Quiz App
   *  design3 : Expanding Card
