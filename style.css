@@ -1,55 +1,55 @@
-*{
-    box-sizing: border-box;
-}
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin:0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-.container{
-    display: flex;
-    width:90vw;
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
 
-.panel{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80vh;
-    border-radius: 50px;
-    color:#fff;
-    cursor: pointer;
-    flex:0.5;
-    margin:10px;
-    position: relative;
-    transition: flex 0.7s ease-in-out;
-}
-.panel h3{
-    font-size: 20px;
-    position: absolute;
-    bottom: 20px;
-    margin: 0;
-    opacity: 0;
-    left: 20px;
+img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
 }
 
-.panel.active{
-    flex:5;
+.carousel {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  height: 530px;
+  width: 500px;
+  overflow: hidden;
 }
-.panel.active h3{
-    opacity: 1;
+
+.image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
 }
-@media (max-width:480px) {
-    .container{
-        width:100vw;
-    }
-    .panel:nth-of-type(4),
-    .panel:nth-of-type(5) {
-      display: none;
-    }
-    
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: rebeccapurple;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 49.5%;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:focus {
+  outline: none;
 }
