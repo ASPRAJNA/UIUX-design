@@ -1,41 +1,29 @@
-const imgs = document.getElementById('imgs')
-const leftBtn = document.getElementById('prev')
-const rightBtn = document.getElementById('next')
-
-const img = document.querySelectorAll('#imgs img')
-
-let idx = 0
-
-let interval = setInterval(run, 3000)
-
-function run() {
-    idx++
-    changeImage()
-}
-
-function changeImage() {
-    if(idx > img.length - 1) {
-        idx = 0
-    } else if(idx < 0) {
-        idx = img.length - 1
+const reactions=document.querySelectorAll('.rating')
+let react="";
+reactions.forEach(reaction => {
+    reaction.addEventListener('click',()=>{
+        removeclass()
+        react=reaction.id;
+        console.log(react,typeof(react))
+        reaction.classList.add('ratingactive')
+        
+    })
+    })
+const send=document.getElementById('send')
+const feedback=document.getElementById('container')
+send.addEventListener('click',()=>{
+    if (react=='' || react=="undefined"){
+        window.alert("Please select one")
+        return
     }
-
-    imgs.style.transform = `translateX(${-idx * 500}px)`
-}
-
-function resetInterval() {
-    clearInterval(interval)
-    interval = setInterval(run, 3000)
-}
-
-rightBtn.addEventListener('click', () => {
-    idx++
-    changeImage()
-    resetInterval()
+    else{
+        feedback.innerHTML=`
+        <span style='font-size:50px;'>&#127878;</span><br>
+        Thank you for the feedback <br>Your reaction is <br>`+react; 
+    }
 })
-
-leftBtn.addEventListener('click', () => {
-    idx--
-    changeImage()
-    resetInterval()
-})
+function removeclass(){
+    reactions.forEach(reaction=>{
+        reaction.classList.remove('ratingactive')
+    })
+}
