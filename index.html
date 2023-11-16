@@ -4,29 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Feedback</title>
+    <title>Sound Board</title>
   </head>
   <body>
-   <div id="container">
-      <h3>How satisfied are you with our
-        customer support performance?</h3>
-        <div class="rating-container">
-          <div class="rating" id="Unhappy">
-            <span style='font-size:40px;'>&#128542;</span>
-            <small>Unhappy</small>
-          </div>
-          <div class="rating"id="Satisfied">
-            <span style='font-size:40px;'>&#128512;</span>
-            <small>Satisfied</small>
-          </div>
-          <div class="rating" id="Loved it">
-            <span style='font-size:40px;'>&#128525;</span>
-            <small>Loved it</small>
-          </div>
-        </div>
-        
-        <button id="send">Send Review</button>
-   </div>
+    <audio id="applause" src="applause.mp3"></audio>
+    <audio id="boo" src="boo.mp3"></audio>
+    <audio id="gasp" src="gasp.mp3"></audio>
+    <audio id="tada" src="tada.mp3"></audio>
+    <audio id="victory" src="victory.mp3"></audio>
+    <audio id="wrong" src="wrong.mp3"></audio>
+
+    <div id="buttons"></div>
 
     <script src="script.js"></script>
   </body>

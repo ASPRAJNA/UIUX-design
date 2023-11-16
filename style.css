@@ -1,58 +1,38 @@
-body{
-  background-color:rgb(252, 233, 208);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(161, 100, 223);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  display:flex;
+  text-align: center;
   height: 100vh;
   overflow: hidden;
-  margin:0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
 }
 
-
-small{
-  font-weight:lighter;
-}
-#container{
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border-radius: 4px;
-  font-size: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 30px;
-  max-width: 400px;
-}
-.rating-container{
-  display:flex;
-  margin: 20px 0;
-
-}
-.rating {
-  flex: 1;
-  cursor: pointer;
-  padding: 20px;
-  margin: 10px 5px;
-}
-
-.rating:hover,  .rating:active, .rating:focus {
-  border-radius: 4px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.ratingactive{
-  border-radius: 4px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-
-#send{
-  color: white;
-  background-color: black;
-  padding: 6px;
-  border-radius: 3px;
+.btn {
+  background-color: rebeccapurple;
+  border-radius: 5px;
   border: none;
+  color: #fff;
+  margin: 1rem;
+  padding: 1.5rem 3rem;
+  font-size: 1.2rem;
+  font-family: inherit;
   cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:focus {
+  outline: none;
 }

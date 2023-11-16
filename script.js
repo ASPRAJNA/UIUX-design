@@ -1,29 +1,23 @@
-const reactions=document.querySelectorAll('.rating')
-let react="";
-reactions.forEach(reaction => {
-    reaction.addEventListener('click',()=>{
-        removeclass()
-        react=reaction.id;
-        console.log(react,typeof(react))
-        reaction.classList.add('ratingactive')
-        
+const sounds=['applause', 'boo', 'gasp', 'tada', 'victory', 'wrong']
+
+sounds.forEach(sound=>{
+    const btn=document.createElement("button")
+    btn.classList.add('btn')
+    btn.innerText=sound
+    btn.addEventListener('click', () => {
+        stopSongs()
+
+        document.getElementById(sound).play()
     })
-    })
-const send=document.getElementById('send')
-const feedback=document.getElementById('container')
-send.addEventListener('click',()=>{
-    if (react=='' || react=="undefined"){
-        window.alert("Please select one")
-        return
-    }
-    else{
-        feedback.innerHTML=`
-        <span style='font-size:50px;'>&#127878;</span><br>
-        Thank you for the feedback <br>Your reaction is <br>`+react; 
-    }
+
+    document.getElementById('buttons').appendChild(btn)
 })
-function removeclass(){
-    reactions.forEach(reaction=>{
-        reaction.classList.remove('ratingactive')
+
+function stopSongs() {
+    sounds.forEach(sound => {
+        const song = document.getElementById(sound)
+
+        song.pause()
+        song.currentTime = 0;
     })
 }
