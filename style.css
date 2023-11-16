@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(161, 100, 223);
+  background-color: rgb(245, 237, 200);
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-wrap: wrap;
@@ -16,23 +16,80 @@ body {
   overflow: hidden;
   margin: 0;
 }
+.calci{
+  background-color: antiquewhite;
+  padding:50px;
+  text-align: center;
+  justify-content: center;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.container{ 
+   justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 300px;
+}
+small{
+  color:rgb(251, 153, 6);
+  font-weight: bold;
+}
 
+#input2{
+  color:rgb(96, 96, 96);
+  padding: 3px;
+  font-size: medium;
+  width: 100%;
+  background: rgb(250, 250, 250);
+  border-radius: 10px 10px 0px 0px;
+  border:none;
+  text-align: right;
+  border-bottom:1px solid rgb(193, 193, 193);
+}
+#input{
+  color:rgb(255, 136, 0);
+  padding: 10px;
+  font-size: medium;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
+  border: None;
+  font-weight: bolder;
+}
+input:focus,input:active{
+  outline: none;
+}
+#buttons,#operations{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 300px;
+  flex-wrap: wrap;
+}
 .btn {
-  background-color: rebeccapurple;
+  background-color: rgb(250, 222, 159);
   border-radius: 5px;
-  border: none;
-  color: #fff;
-  margin: 1rem;
-  padding: 1.5rem 3rem;
-  font-size: 1.2rem;
-  font-family: inherit;
+  border:none;
+  padding: 20px;
+  margin:5px;
+  font-size:20px;
+  align-items: center;
+  color:aliceblue;
+  font-weight:bolder;
   cursor: pointer;
 }
 
-.btn:hover {
-  opacity: 0.9;
-}
 
-.btn:focus {
-  outline: none;
+.btn2 {
+  background-color: rgb(243, 200, 99);
+  border-radius: 5px;
+  border:none;
+  padding: 18px;
+  margin:5px;
+  font-size:20px;
+  align-items: center;
+  color:aliceblue;
+  font-weight:bolder;
+  cursor: pointer;
 }

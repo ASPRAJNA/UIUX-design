@@ -4,18 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Sound Board</title>
+    <title>Simple Calculator</title>
   </head>
   <body>
-    <audio id="applause" src="applause.mp3"></audio>
-    <audio id="boo" src="boo.mp3"></audio>
-    <audio id="gasp" src="gasp.mp3"></audio>
-    <audio id="tada" src="tada.mp3"></audio>
-    <audio id="victory" src="victory.mp3"></audio>
-    <audio id="wrong" src="wrong.mp3"></audio>
-
-    <div id="buttons"></div>
-
+    <div class="calci">
+      <div class="header">
+      <small style="float:right;font-size:10px">Calci</small><br>
+      <input id="input2" type="text"  readonly>
+      <input id="input" type="text"  readonly>
+      </div>
+        <div class="conatiner">
+       <div id="buttons"></div>
+       <div id="operations">
+        <button id="=" class="btn2" style="width:100%;padding:5px;background-color: rgb(251, 153, 6);"  >=</button></div>
+       
+       </div>
+      </div>
     <script src="script.js"></script>
   </body>
 </html>
