@@ -9,6 +9,8 @@ Contains HTML CSS AND JAVA SCRIPT DESIGNS
   *  design4 : Image Carousal
   *  design5 : Feedback
   *  design6 : Sound Board
+  *  design7 : Calculator
+  *  desgin8 : Auto Counter
 
     
   change the branches and checkout the projects
