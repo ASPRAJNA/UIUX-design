@@ -1,35 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(221, 81, 240);
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
-}
-.container{
+  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  text-align: center;
-  margin: 30px 50px;
-}
-span{
-  color:white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
+  min-height: 100vh;
+  margin: 0;
 }
 
-.counter{
-  color:white;
-  
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+.title {
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+.container img {
+  object-fit: cover;
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+  max-width: 100%;
 }

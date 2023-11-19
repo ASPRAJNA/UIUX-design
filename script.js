@@ -1,21 +1,17 @@
-const counters = document.querySelectorAll('.counter')
+const container = document.querySelector('.container')
+const unsplashURL = 'https://source.unsplash.com/random/'
+const rows = 8
 
-counters.forEach(counter => {
-    counter.innerText = '0'
+for (let i=0;i<rows*3 ;i++){
+    const img=document.createElement('img')
+    img.src=`${unsplashURL}${getRandomSize()}`
+    container.appendChild(img)
+}
+function getRandomSize() {
+    return `${getRandomNr()}x${getRandomNr()}`
+}
 
-    const updateCounter = () => {
-        const target = +counter.getAttribute('data-target')
-        const c = +counter.innerText
+function getRandomNr() {
+    return Math.floor(Math.random() * 10) + 300
+}
 
-        const increment = target / 200
-
-        if(c < target) {
-            counter.innerText = `${Math.ceil(c + increment)}`
-            setTimeout(updateCounter, 1)
-        } else {
-            counter.innerText = target
-        }
-    }
-
-    updateCounter()
-})
