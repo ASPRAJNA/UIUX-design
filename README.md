@@ -11,6 +11,7 @@ Contains HTML CSS AND JAVA SCRIPT DESIGNS
   *  design6 : Sound Board
   *  design7 : Calculator
   *  desgin8 : Auto Counter
+  *  design9 : Random Image generator
 
     
   change the branches and checkout the projects
