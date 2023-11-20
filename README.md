@@ -12,6 +12,7 @@ Contains HTML CSS AND JAVA SCRIPT DESIGNS
   *  design7 : Calculator
   *  desgin8 : Auto Counter
   *  design9 : Random Image generator
+  *  design10 : Auto Text generator
 
     
   change the branches and checkout the projects
