@@ -1,17 +1,18 @@
-const container = document.querySelector('.container')
-const unsplashURL = 'https://source.unsplash.com/random/'
-const rows = 8
+const text1=document.getElementById('text')
+const speed= document.getElementById('speed')
+const text="We love programming!!!..."
+let idx=1;
+let speedval= 300/speed.value
 
-for (let i=0;i<rows*3 ;i++){
-    const img=document.createElement('img')
-    img.src=`${unsplashURL}${getRandomSize()}`
-    container.appendChild(img)
-}
-function getRandomSize() {
-    return `${getRandomNr()}x${getRandomNr()}`
+writeText()
+function writeText(){
+    text1.innerHTML=text.slice(0,idx)
+    idx++
+
+    if(idx>text.length){
+        idx=1
+    }
+    setTimeout(writeText,speedval)
 }
 
-function getRandomNr() {
-    return Math.floor(Math.random() * 10) + 300
-}
-
+speed.addEventListener('input', (e) => speed = 300 / e.target.value)
