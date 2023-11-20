@@ -1,29 +1,33 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Expanding Cards</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" / >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <title>Feedback</title>
   </head>
   <body>
-    <div class="container">
-        <div class="panel active" style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');">
-        <h3>Explore the World</h3>
+   <div id="container">
+      <h3>How satisfied are you with our
+        customer support performance?</h3>
+        <div class="rating-container">
+          <div class="rating" id="Unhappy">
+            <span style='font-size:40px;'>&#128542;</span>
+            <small>Unhappy</small>
+          </div>
+          <div class="rating"id="Satisfied">
+            <span style='font-size:40px;'>&#128512;</span>
+            <small>Satisfied</small>
+          </div>
+          <div class="rating" id="Loved it">
+            <span style='font-size:40px;'>&#128525;</span>
+            <small>Loved it</small>
+          </div>
         </div>
-        <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');">
-        <h3>Wild Forest</h3>
-        </div>
-        <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80');">
-        <h3>Sunny Beach</h3>
-        </div>
-        <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');">
-        <h3>City On Winter</h3>
-        </div>
-        <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
-        <h3>Mountains - Clouds</h3>
-        </div>
-    </div>
+        
+        <button id="send">Send Review</button>
+   </div>
+
     <script src="script.js"></script>
   </body>
 </html>
