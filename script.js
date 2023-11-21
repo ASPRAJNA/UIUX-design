@@ -1,18 +1,34 @@
-const text1=document.getElementById('text')
-const speed= document.getElementById('speed')
-const text="We love programming!!!..."
-let idx=1;
-let speedval= 300/speed.value
+const password=document.getElementById('password')
+const length=document.getElementById('length')
+const upper=document.getElementById('upper')
+const lower=document.getElementById('lower')
+const symbols=document.getElementById('symbols')
+const number =document.getElementById('number')
+const button=document.getElementById('generate')
 
-writeText()
-function writeText(){
-    text1.innerHTML=text.slice(0,idx)
-    idx++
-
-    if(idx>text.length){
-        idx=1
-    }
-    setTimeout(writeText,speedval)
+const randomFunc = {
+    lower: getRandomLower,
+    upper: getRandomUpper,
+    number: getRandomNumber,
+    symbol: getRandomSymbol
 }
 
-speed.addEventListener('input', (e) => speed = 300 / e.target.value)
+function getRandomLower() {
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
+}
+
+function getRandomUpper() {
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 65)
+}
+
+function getRandomNumber() {
+    return String.fromCharCode(Math.floor(Math.random() * 10) + 48)
+}
+
+function getRandomSymbol() {
+    const symbols = '!@#$%^&*(){}[]=<>/,.'
+    return symbols[Math.floor(Math.random() * symbols.length)]
+}
+
+
+

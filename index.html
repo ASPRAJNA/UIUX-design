@@ -2,15 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />   <link rel="stylesheet" href="style.css" />
-       <title>Auto Text effect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Passowrd Geneartor</title>
   </head>
+
   <body>
-    <h1 id="text">Starting...</h1>
-     <div>
-      <label for="speed">Speed.</label>
-      <input type="text" min="1" max="10" name="speed" id="speed" value="1" step="1">
+    <div class="container">
+      <h4>Password Geneartor</h4>
+
+      <input type="text" id="password" value="" placeholder="" />
+      <div class="conditions">
+        <label>Password Length</label>
+        <input
+          id="length"
+          type="number"
+          min="9"
+          max="20"
+          value="9"
+          style="font-size: 15px"
+        />
       </div>
+      <div class="conditions">
+        <label>Upper Case</label>
+        <input type="checkbox" id="upper"   />
+      </div>
+      <div class="conditions">
+        <label>Lower Case</label>
+        <input type="checkbox" id="lower"  />
+      </div>
+      <div class="conditions">
+        <label>Symbols</label>
+        <input type="checkbox" id="symbols"  />
+      </div>
+      <div class="conditions">
+        <label>Number</label>
+        <input type="checkbox" id="number" />
+      </div>
+     
+     
+      <button id="generate" type="button">Genearte</button>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
