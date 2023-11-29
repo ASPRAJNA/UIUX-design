@@ -13,6 +13,7 @@ Contains HTML CSS AND JAVA SCRIPT DESIGNS
   *  desgin8 : Auto Counter
   *  design9 : Random Image generator
   *  design10 : Auto Text generator
+  *  design13 : Progess Card
 
     
   change the branches and checkout the projects
