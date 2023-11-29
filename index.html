@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Passowrd Geneartor</title>
-  </head>
 
-  <body>
-    <div class="container">
-      <h4>Password Geneartor</h4>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Progress Card</title>
+</head>
 
-      <input type="text" id="password" value="" placeholder="" />
-      <div class="conditions">
-        <label>Password Length</label>
-        <input
-          id="length"
-          type="number"
-          min="9"
-          max="20"
-          value="9"
-          style="font-size: 15px"
-        />
+<body>
+  <div class="container">
+    <div class="content">
+      <h4>Good Job!</h4>
+      <h6 style="color: gray">Your Score Card</h6>
+      <center><div style="
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            border: 10px solid white;
+            border-top: 10px solid green;
+            border-right: 10px solid yellow;
+            transform: rotate(-45deg);
+            
+          ">
+        <div id="score">
+
+          <span style="font-size: 30px;font-weight: bolder; letter-spacing: 3px;">1534</span><br>
+          <span style="font-size:10px;"><b>points</b></span>
+        </div>
+      </center>
       </div>
-      <div class="conditions">
-        <label>Upper Case</label>
-        <input type="checkbox" id="upper"   />
+      
+      <span style="text-align:right;">Score factors</span>
+      <div id="scorefactors">
+        <div class="fact" style="border-right:8px solid rgb(133, 199, 133);">
+          <span class="count"><i class="fa fa-book" style="font-size:15px;color:green"></i>823<br></span>
+          <span class="exp">Lesson read </span>
+        </div>
+        <div class="fact" style="border-right:8px solid rgb(191, 245, 83);">
+          <span class="count">
+            <i class="fa fa-star" style="font-size:15px;color:green"></i>15<br></span>
+          <span class="exp">Stars collected </span>
+        </div>
+        <div class="fact" style="border-right:8px solid rgb(237, 225, 157);">
+          <span class="count">
+            <i class="fa fa-question-circle" style="font-size:15px;color:green"></i>3<br></span>	
+          <span class="exp">Quiz points </span>
+        </div>
+        <div class="fact" style="border-right:8px solid rgb(111, 232, 105);">
+          <span class="count"><i class="fa fa-pencil-square" style="font-size:15px;color:green"></i>25<br></span>
+          <span class="exp">Exercise points</span>
+        </div>
       </div>
-      <div class="conditions">
-        <label>Lower Case</label>
-        <input type="checkbox" id="lower"  />
-      </div>
-      <div class="conditions">
-        <label>Symbols</label>
-        <input type="checkbox" id="symbols"  />
-      </div>
-      <div class="conditions">
-        <label>Number</label>
-        <input type="checkbox" id="number" />
-      </div>
-     
-     
-      <button id="generate" type="button">Genearte</button>
     </div>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
