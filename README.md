@@ -1,5 +1,5 @@
 ## UIUX-design
-Contains HTML CSS AND JAVA SCRIPT DESIGNS
+HTML CSS AND JAVA SCRIPT DESIGNS
 
 
 ### Branches:
