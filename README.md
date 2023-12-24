@@ -13,6 +13,7 @@ HTML CSS AND JAVA SCRIPT DESIGNS
   *  desgin8 : Auto Counter
   *  design9 : Random Image generator
   *  design10 : Auto Text generator
+  *  design12 : Beverages
   *  design13 : Progess Card
 
     
